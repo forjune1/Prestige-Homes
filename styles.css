@@ -1104,6 +1104,11 @@ footer .footers img {
     font-size: 0.9rem;
   }
 
+  .home-filter-container {
+  width: 90%;
+  padding: 25px 20px;
+}
+
   .min-overview h2 {
     font-size: 1.5rem;
     font-weight: bold;
@@ -1158,10 +1163,7 @@ footer .footers img {
 
   .why h2 {
   font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
+  }
 
 .why p {
   font-size: 0.9rem;
@@ -1271,6 +1273,20 @@ footer .footers img {
 
 }
 
+
+@media (max-width: 480px) {
+  .hero {
+    height: 90vh;
+  }
+
+  .hero-content h1 {
+    line-height: 1;
+  }
+
+  .hero-content {
+    width: 90%;
+  }
+}
 
 
 
