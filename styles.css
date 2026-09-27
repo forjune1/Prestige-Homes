@@ -1091,12 +1091,16 @@ footer .footers img {
 
 
 
-@media (max-width: 580px) {
+@media (max-width: 480px) {
+  .hero {
+    height: 90vh;
+  }
+
 
   .hero-content h1 {
     font-size: 2.2rem;
     margin-top: 20px;
-    line-height: 2;
+    line-height: 1;
   }
 
   .hero-content p {
@@ -1274,19 +1278,6 @@ footer .footers img {
 }
 
 
-@media (max-width: 480px) {
-  .hero {
-    height: 90vh;
-  }
-
-  .hero-content h1 {
-    line-height: 1;
-  }
-
-  .hero-content {
-    width: 90%;
-  }
-}
 
 
 
