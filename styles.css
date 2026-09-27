@@ -513,8 +513,9 @@ footer .footers img {
     footer {
   display: flex;
   flex-direction: column;
-  padding: 40px 60px 40px 60px;
+  padding: 40px 30px;
   font-size: 0.9rem;
+  width: 100%;
 }
 
 .foot-one {
@@ -656,9 +657,7 @@ footer .footers img {
 ================================ */
 
 .featured-properties {
-    width: 90%;
-    max-width: 1200px;
-    margin: 80px auto;
+    padding: 60px;
 }
 
 .featured-header {
@@ -668,7 +667,6 @@ footer .footers img {
 }
 
 .featured-header h2 {
-    font-size: 36px;
     margin-bottom: 10px;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
@@ -724,7 +722,6 @@ footer .footers img {
 .why h2 {
   font-size: 2.5rem;
   font-weight: 600;
-  font-size: 36px;
   margin-bottom: 10px;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -753,6 +750,13 @@ footer .footers img {
     padding: 60px;
 }
 
+.agents-sec h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif; 
+  margin-bottom: 10px; 
+}
+
 .testimonials {
   text-align: center;
   padding: 60px;
@@ -761,7 +765,6 @@ footer .footers img {
 .testimonials h2 {
   font-size: 2.5rem;
   font-weight: bold;
-  font-size: 36px;
   margin-bottom: 10px;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -838,12 +841,12 @@ footer .footers img {
 .cta {
   background: #148139;
   color: #fff;
-  padding: 60px 20px;
+  padding: 60px;
   text-align: center;
 }
 
 .cta h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 10px;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -923,9 +926,7 @@ footer .footers img {
   }
 
   .featured-properties {
-    width: 90%;
-    max-width: 1200px;
-    margin: 40px auto;
+    padding: 35px;
   }
 
   .featured-header {
@@ -946,10 +947,6 @@ footer .footers img {
     font-size: 1rem;
 }
 
-  .featured-button-container {
-
-  }
-
   .show-more-properties {
     font-size: 0.85rem;
   }
@@ -960,10 +957,7 @@ footer .footers img {
 
   .why h2 {
   font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
+  } 
 
 .why p {
   font-size: 1rem;
@@ -988,6 +982,10 @@ footer .footers img {
 
   .agents-sec {
     padding: 35px;
+  }
+
+  .agents-sec h2 {
+    font-size: 2rem;
   }
 
   .testimonials {
@@ -1028,7 +1026,7 @@ footer .footers img {
 }
 
 .cta {
-  padding: 35px 20px;
+  padding: 35px;
 }
 
 .cta h2 {
@@ -1057,7 +1055,7 @@ footer .footers img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     text-align: center;
-    padding: 40px 30px;
+    padding: 35px;
     row-gap: 20px;
   }
 
@@ -1082,9 +1080,7 @@ footer .footers img {
     width: 100%;
   }
 
-  .featured-properties {
-    width: 90%;
-  }
+
 
   .featured-header,
   .properties-grid {
@@ -1121,7 +1117,7 @@ footer .footers img {
 }
 
   .min-overview h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: -5px;
   }
@@ -1130,7 +1126,7 @@ footer .footers img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     text-align: center;
-    padding: 40px auto;
+    padding: 30px;
     row-gap: 20px;
   }
 
@@ -1143,6 +1139,7 @@ footer .footers img {
   .max-overview p {
     font-size: 0.9rem;
   }
+
 
   .featured-header {
     display: flex;
@@ -1196,7 +1193,12 @@ footer .footers img {
   }
 
   .agents-sec {
-    padding: 30px;
+     padding: 30px;
+
+  }
+
+  .agents-sec h2 {
+    font-size: 1.5rem;
   }
 
   .testimonials {
@@ -1248,7 +1250,7 @@ footer .footers img {
 }
 
 .cta {
-  padding: 35px 30px;
+  padding: 30px;
 }
 
 .cta h2 {
@@ -1265,7 +1267,7 @@ footer .footers img {
 }
 
 .featured-properties {
-  padding: 10px;
+  padding: 30px;
 } 
 
 .featured-properties .properties-grid {
@@ -1289,7 +1291,6 @@ footer .footers img {
 
 /* PROPERTIES PAGE CSS */
 .property-search {
-  width: 100%;
   padding: 40px 60px;
 }
 
@@ -1870,16 +1871,17 @@ body.modal-open {
   font-size: 12px;
 }
 
-.property-listings {
-  padding: 40 60px;
-}
-
 .filter-button {
   padding: 12px 22px;
   font-size: 12px;
 }
 
+.property-listings {
+  padding: 35px;
+}
+
 .properties-grid {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -1900,6 +1902,7 @@ body.modal-open {
   .featured-header #minimize-i {
     display: none;
   }
+
 }  
 
 
@@ -1907,10 +1910,14 @@ body.modal-open {
 }
 
 @media (max-width: 580px) {
+  .property-listings {
+    padding: 30px;
+  }
+
   .properties-grid {
     display: grid;
     grid-template-columns: 1fr;
-    width: 100%;
+    
 }
 
 .property-image {
@@ -2321,6 +2328,7 @@ body.modal-open {
 
   .contact-section {
     gap: 20px;
+    padding: 35px;
   }
 
   .contact-left h1 {
@@ -2352,17 +2360,19 @@ body.modal-open {
 }
 
 .map-container {
-  padding: 40px 60px;
-  margin-bottom: 20px;
+  padding: 30px;
+  margin-bottom: 40px;
+}
 }
 
-}
+
 
 @media (max-width: 580px) {
 
   .contact-section {
     display: flex;
     flex-direction: column;
+    padding: 30px;
   }
 
   .contact-left {
@@ -2412,7 +2422,7 @@ body.modal-open {
 
 
 .map-container {
-  padding: 60px;
+  padding: 30px;
   margin-bottom: 40px;
 }
 
@@ -2796,10 +2806,10 @@ body.modal-open {
 ========================================= */
 
 .about-story {
-    width: 90%;
-    max-width: 1200px;
+    width: 100%;
 
-    margin: 100px auto;
+    padding: 60px;
+    margin: auto;
 
     display: grid;
 
@@ -3126,7 +3136,7 @@ body.modal-open {
 .why-us-section {
     width: 100%;
 
-    padding: 40px 60px;
+    padding: 60px;
 
     display: grid;
 
@@ -3261,7 +3271,7 @@ body.modal-open {
 .about-story {
   gap: 30px;
   width: 100%;
-  padding: 0 60px ;
+  padding: 60px 35px ;
 }
 
 
@@ -3416,12 +3426,16 @@ body.modal-open {
 }
 
 @media (max-width: 580px) {
+  .about-hero {
+    margin-bottom: 40px;
+  }
+
   .about-story,
   .mission-section,
   .values-section,
   .why-us-section {
     width: 100%;
-    margin: 0 auto;
+    padding: 40px 30px;
   }
 
   .mission-grid {
@@ -3443,7 +3457,6 @@ body.modal-open {
  .about-hero h1 {
     font-size: 2rem;
 }
-
 
 .about-story-content h2 {
   font-size: 1.5rem;
