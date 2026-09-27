@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="logo" aria-label="Home page">
+        
+        <img 
+          id="logo"
+          src="img/logo (1).svg" 
+          alt="Real Estate Logo" 
+          width="120" 
+          height="40"
+        />
+      </a>
+      <ul>
+        <li><a href="properties.html">Properties</a></li>
+        <li><a href="agents.html">Agents</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <i
+        id="theme-toggle"
+        class="fas fa-moon"
+        role="button"
+        aria-label="Toggle theme"
+        title="Toggle theme"
+      ></i>
+      <i
+        id="theme-toggle-reverse"
+        class="fas fa-lightbulb"
+        role="button"
+        aria-label="Toggle theme"
+        title="Toggle theme"
+      ></i>
+
+      <a href="contact.html" id="contact-btn">List Your Properties</a>
+    </nav>
+
+    <section class="agents-section">
+
+        <div class="agents-header">
+
+            <h1>Meet Our Agents</h1>
+
+            <p>
+                Our experienced team is dedicated to helping you find your perfect property.
+            </p>
+
+        </div>
+
+
+        <div
+            id="agentsContainer"
+            class="agents-grid"
+        ></div>
+
+    </section>
+
+    <section class="cta">
+        <h2>Ready to Find Your Dream Home?</h2>
+        <p>
+          Contact us today to schedule a consultation and start your journey
+          towards finding the perfect property.
+        </p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="cta-button">Contact Us</a>
+          <a href="properties.html" class="cta-button secondary">Browse Properties <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="cta-contact">
+          <p><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</p>
+          <p><i class="fa-solid fa-envelope"></i> hello@prestigehomes.com</p>
+        </div>
+      </section>
+
+
+    <footer class="foot-section">
+      <div class="foot-one">
+        <div class="footers">
+          <img src="img/logo (1).svg" alt="">
+          <p>Find your dream home with our curated selection of luxury properties and expert guidance.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footers">
+          <h3>QUICK LINKS</h3>
+          <ul>
+            <li><a href="properties.html">Properties</a></li>
+            <li><a href="agents.html">Agents</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="properties.html#for-sale">Properties for Sale</a></li>
+            <li><a href="properties.html#for-rent">Properties for Rent</a></li>
+          </ul>
+        </div>
+        <div class="footers">
+          <h3>LOCATIONS</h3>
+          <ul>
+            <li>Abuja</li>
+            <li>Lagos</li>
+            <li>Port Harcourt</li>
+            <li>Enugu</li>
+            <li>Ibadan</li>
+          </ul>
+        </div>
+        <div class="footers">
+          <h3>CONTACT US</h3>
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="inner">
+              <p>123 Main Street, Downtown, 
+                <br>
+                New York, NY 10001</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="inner">
+              <p>+1 (555) 123-4567</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="inner">
+              <p>hello@realestate.com</p>
+            </div>
+          </div>
+        </div>
+      </div>  
+      <div class="foot-two">
+        <p>&copy; 2026 Prestige Homes. All rights reserved.</p>
+
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Fair Housing</a>
+        </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/agents.js"></script>
+
+  </body>
+</html>

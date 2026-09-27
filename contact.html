@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="logo" aria-label="Home page">
+        
+        <img 
+          id="logo"
+          src="img/logo (1).svg" 
+          alt="Real Estate Logo" 
+          width="120" 
+          height="40"
+        />
+      </a>
+      <ul>
+        <li><a href="properties.html">Properties</a></li>
+        <li><a href="agents.html">Agents</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <i
+        id="theme-toggle"
+        class="fas fa-moon"
+        role="button"
+        aria-label="Toggle theme"
+        title="Toggle theme"
+      ></i>
+      <i
+        id="theme-toggle-reverse"
+        class="fas fa-lightbulb"
+        role="button"
+        aria-label="Toggle theme"
+        title="Toggle theme"
+      ></i>
+
+      <a href="contact.html" id="contact-btn">List Your Properties</a>
+    </nav>
+
+    <section class="contact-section">
+      <div class="contact-left">
+        <h1>Get In Touch</h1>
+        <p>Have questions about a property or want to schedule a viewing?
+          <br>
+          We're here to help.</p>
+
+        <div class="info-item">
+          <div class="info-icon">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div class="inner">
+            <h3>Location</h3>
+            <p>123 Main Street, Downtown, 
+              <br>
+              New York, NY 10001</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <div class="inner">
+            <h3>Phone</h3>
+            <p>+1 (555) 123-4567</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div class="inner">
+            <h3>Email</h3>
+            <p>hello@realestate.com</p>
+          </div>
+        </div>
+
+        <h3>Follow Us</h3>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="contact-right">
+        <form class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" />
+            </div>
+
+            <div class="form-group">
+              <label for="interested">What are you interested in?</label>
+              <select id="interested" name="interested" required>
+                <option value="">Select an option</option>
+                <option value="buying">Buying a Property</option>
+                <option value="selling">Selling a Property</option>
+                <option value="renting">Renting a Property</option>
+                <option value="inquiry">General Inquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" placeholder="Tell us what you are looking for..." required></textarea>
+            </div>
+
+            <button type="submit" class="send-btn">Send Message</button>
+          </div>  
+        </form>
+      </div>
+    </section>
+
+    <section class="map-section">
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.1234567890!2d-74.0060!3d40.7128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a316bb45e6d%3A0x123456789!2s123%20Main%20Street%2C%20Downtown%2C%20New%20York%2C%20NY%2010001!5e0!3m2!1sen!2sus!4v1234567890123" 
+          width="100%" 
+          height="400" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <footer class="foot-section">
+      <div class="foot-one">
+        <div class="footers">
+          <img src="img/logo (1).svg" alt="">
+          <p>Find your dream home with our curated selection of luxury properties and expert guidance.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footers">
+          <h3>QUICK LINKS</h3>
+          <ul>
+            <li><a href="properties.html">Properties</a></li>
+            <li><a href="agents.html">Agents</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="properties.html#for-sale">Properties for Sale</a></li>
+            <li><a href="properties.html#for-rent">Properties for Rent</a></li>
+          </ul>
+        </div>
+        <div class="footers">
+          <h3>LOCATIONS</h3>
+          <ul>
+            <li>Abuja</li>
+            <li>Lagos</li>
+            <li>Port Harcourt</li>
+            <li>Enugu</li>
+            <li>Ibadan</li>
+          </ul>
+        </div>
+        <div class="footers">
+          <h3>CONTACT US</h3>
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="inner">
+              <p>123 Main Street, Downtown, 
+                <br>
+                New York, NY 10001</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="inner">
+              <p>+1 (555) 123-4567</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="inner">
+              <p>hello@realestate.com</p>
+            </div>
+          </div>
+        </div>
+      </div>  
+      <div class="foot-two">
+        <p>&copy; 2026 Prestige Homes. All rights reserved.</p>
+
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Fair Housing</a>
+        </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+  </body>
+</html>

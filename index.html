@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="logo" aria-label="Home page">
+        
+        <img 
+          id="logo"
+          src="img/logo (1).svg" 
+          alt="Real Estate Logo" 
+          width="120" 
+          height="40"
+        />
+      </a>
+      <!-- Hamburger for tablet / mobile -->
+      <button id="hamburger" aria-label="Open navigation" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul>
+        <li><a href="properties.html">Properties</a></li>
+        <li><a href="agents.html">Agents</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <i
+        id="theme-toggle"
+        class="fas fa-moon"
+        role="button"
+        aria-label="Toggle theme"
+        title="Toggle theme"
+      ></i>
+      <i
+        id="theme-toggle-reverse"
+        class="fas fa-lightbulb"
+        role="button"
+        aria-label="Toggle theme"
+        title="Toggle theme"
+      ></i>
+
+      <a href="contact.html" id="contact-btn">List Your Properties</a>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Find Your <span class="green-text">Dream Home</span></h1>
+          <p>
+            Discover luxury properties in the most prestigious neighborhoods with our expert guidance.
+          </p>
+
+          <div class="purpose-tabs" aria-label="Property listing type">
+            <button type="button" data-purpose="buy" class="purpose-btn active">Buy</button>
+            <button type="button" data-purpose="rent" class="purpose-btn">Rent</button>
+          </div>
+
+          <div class="filter-container home-filter-container">
+            <div class="filter-group home-filter-group">
+              <label for="homeLocation"><i class="fa-solid fa-location-dot"></i> Location</label>
+              <select name="" id="homeLocation">
+                <option value="">Any Location</option>
+                <option value="abuja">Abuja</option>
+                <option value="lagos">Lagos</option>
+                <option value="port harcourt">Port Harcourt</option>
+                <option value="enugu">Enugu</option>
+                <option value="ibadan">Ibadan</option>
+              </select>
+            </div>
+
+            <div class="filter-group home-filter-group">
+              <label for="homeType"><i class="fa-solid fa-house"></i> Property Type</label>
+              <select name="" id="homeType">
+                <option value="">Any Type</option>
+                <option value="apartment">Apartment</option>
+                <option value="penthouse">Penthouse</option>
+                <option value="bungalow">Bungalow</option>
+                <option value="terrace">Terrace</option>
+                <option value="detached house">Detached House</option>
+                <option value="mansion">Mansion</option>
+                <option value="duplex">Duplex</option>
+              </select>
+            </div>
+            
+            <div class="filter-group home-filter-group">
+              <label for="homePrice"><i class="fa-solid fa-dollar-sign"></i> Price Range</label>
+              <select id="homePrice" name="price-range">
+                <option value="">Any Price</option>
+                <option value="0-1999999">0 - ₦1,999,999</option>
+                <option value="2000000-4999999">₦2,000,000 - ₦4,999,999</option>
+                <option value="5000000-24999999">₦5,000,000 - ₦24,999,999</option>
+                <option value="25000000-99999999">₦25,000,000 - ₦99,999,999</option>
+                <option value="100000000+">₦100,000,000+</option>
+              </select>
+            </div>
+
+            <!-- <div class="filter-group home-filter-group">
+              <label for="bedrooms"><i class="fa-solid fa-bed"></i> Bedrooms</label>
+              <select id="bedrooms" name="bedrooms">
+                <option value="">Any</option>
+                <option value="1">1+</option>
+                <option value="2">2+</option>
+                <option value="3">3+</option>
+                <option value="4">4+</option>
+                <option value="5">5+</option>
+              </select>
+            </div> -->
+
+            <button id="home-filter-btn" class="filter-button">
+              <i class="fas fa-search"></i> Apply Filters
+            </button>
+          </div>
+
+         
+
+          <div class="min-overview">
+            <div>
+              <h2>500+</h2>
+              <p>Properties Listed</p>
+            </div>
+            <div>
+              <h2>$2B+</h2>
+              <p>Sales Volume</p>
+            </div>
+            <div>
+              <h2>15+</h2>
+              <p>Years Experience</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="overview">
+        <div class="max-overview">
+          <div>
+            <h2 class="green-text">$2B+</h2>
+            <p>Sales Volume</p>
+          </div>
+          <div>
+            <h2 class="green-text">500+</h2>
+            <p>Property Sold</p>
+          </div>
+          <div>
+            <h2 class="green-text">15+</h2>
+            <p>Years Experience</p>
+          </div>
+          <div>
+            <h2 class="green-text">98%</h2>
+            <p>Client Satisfaction</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured-properties">
+
+          <div class="featured-header">
+
+              <div class="minimize-left">
+                  <h2>Featured Properties</h2>
+
+                  <p>
+                      Explore some of our finest properties available for sale and rent.
+                  </p>
+              </div>
+
+              <div class="featured-button-container">
+
+                <a
+                    href="properties.html?showAll=true"
+                    class="show-more-properties"
+                >
+                    Show More <span class="cut-btn">Properties</span>
+                    <i class="fas fa-arrow-right" id="minimize-i"></i>
+                </a>
+
+              </div>
+
+
+          </div>
+
+
+          <div
+              id="featuredPropertiesContainer"
+              class="properties-grid"
+          ></div>
+
+
+      </section>
+
+      <div id="property-modal" class="property-modal">
+
+        <div class="modal-content">
+
+          <button
+              id="close-modal"
+              class="close-modal"
+          >
+              &times;
+          </button>
+
+          <div id="modal-details"></div>
+
+        </div>
+
+      </div>
+
+      <section class="why">
+        <h2>Why Choose Prestige Homes</h2>
+        <p>
+          We bring decades of experience and a personalized approach to every
+          client.
+        </p>
+
+        <div class="whys">
+          <div>
+            <img src="img/verified-check.svg" alt="" />
+            <h3>Trusted Expertise</h3>
+            <p>
+              15+ years of experience in luxury real estate with a proven track
+              record.
+            </p>
+          </div>
+          <div>
+            <img src="img/people-group.svg" alt="" />
+            <h3>Client First</h3>
+            <p>
+              Personalized guidance and strategic support tailored to your goals
+              and lifestyle.
+            </p>
+          </div>
+          <div>
+            <img src="img/magnifying-glass-8.svg" alt="" />
+            <h3>Market Insight</h3>
+            <p>
+              Deep local intelligence and pricing strategies that uncover the
+              right opportunities.
+            </p>
+          </div>
+          <div>
+            <img src="img/dollar.svg" alt="" />
+            <h3>Strong Results</h3>
+            <p>
+              Proven negotiation expertise and a history of exceptional sales
+              outcomes.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="agents-section agents-sec">
+
+        <div class="agents-header">
+
+            <h1>Meet Our Agents</h1>
+
+            <p>
+                Our experienced team is dedicated to helping you find your perfect property.
+            </p>
+
+        </div>
+
+
+        <div
+            id="agentsContainer"
+            class="agents-grid"
+        ></div>
+
+        <div class="view-agents">
+          <a href="agents.html">view all agents <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+
+      <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <p>
+          Hear from homeowners who found their perfect property with us.
+        </p>
+
+        <div class="reviews">
+          <div class="review-card">
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <p>
+              "We couldn't be happier with our new home! Prestige Homes provided
+              exceptional service and support throughout the entire process."
+            </p>
+            <p class="reviewer-prop-type">Brooklyn condo</p>
+            
+            <div class="review-profile">
+              <img src="imgs/photo-1522071820081-009f0129c71c.jpg" alt="Client profile" />
+              <div class="client-info">
+                <h4>Jessica David</h4>
+                <p>Homeowners</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <p>
+              "We couldn't be happier with our new home! Prestige Homes provided
+              exceptional service and support throughout the entire process."
+            </p>
+            <p class="reviewer-prop-type">Brooklyn condo</p>
+            
+            <div class="review-profile">
+              <img src="imgs/photo-1494790108377-be9c29b29330.jpg" alt="Client profile" />
+              <div class="client-info">
+                <h4>Jessica David</h4>
+                <p>Homeowners</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <p>
+              "We couldn't be happier with our new home! Prestige Homes provided
+              exceptional service and support throughout the entire process."
+            </p>
+            <p class="reviewer-prop-type">Brooklyn condo</p>
+            
+            <div class="review-profile">
+              <img src="imgs/photo-1507003211169-0a1dd7228f2d.jpg" alt="Client profile" />
+              <div class="client-info">
+                <h4>Jessica David</h4>
+                <p>Homeowners</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <h2>Ready to Find Your Dream Home?</h2>
+        <p>
+          Contact us today to schedule a consultation and start your journey
+          towards finding the perfect property.
+        </p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="cta-button">Contact Us</a>
+          <a href="properties.html" class="cta-button secondary">Browse Properties <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="cta-contact">
+          <p><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</p>
+          <p><i class="fa-solid fa-envelope"></i> hello@prestigehomes.com</p>
+        </div>
+      </section>
+    </main>
+
+
+
+    <footer class="foot-section">
+      <div class="foot-one">
+        <div class="footers">
+          <img src="img/logo (1).svg" alt="">
+          <p>Find your dream home with our curated selection of luxury properties and expert guidance.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footers">
+          <h3>QUICK LINKS</h3>
+          <ul>
+            <li><a href="properties.html">Properties</a></li>
+            <li><a href="agents.html">Agents</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="properties.html#for-sale">Properties for Sale</a></li>
+            <li><a href="properties.html#for-rent">Properties for Rent</a></li>
+          </ul>
+        </div>
+        <div class="footers">
+          <h3>LOCATIONS</h3>
+          <ul>
+            <li>Abuja</li>
+            <li>Lagos</li>
+            <li>Port Harcourt</li>
+            <li>Enugu</li>
+            <li>Ibadan</li>
+          </ul>
+        </div>
+        <div class="footers">
+          <h3>CONTACT US</h3>
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="inner">
+              <p>123 Main Street, Downtown, 
+                <br>
+                New York, NY 10001</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="inner">
+              <p>+1 (555) 123-4567</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="inner">
+              <p>hello@realestate.com</p>
+            </div>
+          </div>
+        </div>
+      </div>  
+      <div class="foot-two">
+        <p>&copy; 2026 Prestige Homes. All rights reserved.</p>
+
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Fair Housing</a>
+        </div>
+        </div>
+    </footer>
+
+    <script src="js/properties.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/property-modal.js"></script>
+    <script src="js/featured-properties.js"></script>
+    <script src="js/agents.js"></script>
+    
+  </body>
+</html>
